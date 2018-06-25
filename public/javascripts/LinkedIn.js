@@ -1,17 +1,17 @@
-var url = 'http://www.imdb.com/title/tt1229340/';
-var $;
-var title, release, rating;
-var json;
-var LinkedInData= function(){
-    var url = 'http://www.imdb.com/title/tt1229340/';
-    // request(url, function(error, response, html){
-    //     if(!error){
-    //          $ = cheerio.load(html);
-    //         title, release, rating;
-    //         json = { title : "", release : "", rating : ""};
-    //     }
-    // })
-    console.log(url);
+var request = require('request');
+var cheerio = require('cheerio');
+var projects='Add web scrape'
+
+request('https://github.com/BenNewell32?tab=repositories', function(err, resp, html) {
+        if (!err){
+          const $ = cheerio.load(html);
+          console.log(html); 
+          projects=html;
+      }
+});
+
+function data(){
+    return projects
 }
 
-LinkedInData();
+module.exports = {data}
