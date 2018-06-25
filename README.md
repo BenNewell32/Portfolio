@@ -16,6 +16,7 @@ http://expressjs.com/en/4x/api.html#res.render
 
 cheerio
 https://scotch.io/tutorials/scraping-the-web-with-node-js
+https://cheerio.js.org/
 
 
 ##Notes

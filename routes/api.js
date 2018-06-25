@@ -1,10 +1,15 @@
 var express = require('express');
 var router = express.Router();
-var linkedin = require('../public/javascripts/linkedin.js')
+var githubProjects = require('../public/javascripts/githubProjects.js')
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.send(linkedin.data());
-});
+// Homepage for the route "/api"
+  router.get('/', function(req, res, next) {
+    res.send(githubProjects.data());
+  });
+
+// Ben - simply add another route "/api/user"
+  // router.get('/user', function(req, res, next) {
+  //   res.send(githubProjects.data());
+  // });
 
 module.exports = router;
