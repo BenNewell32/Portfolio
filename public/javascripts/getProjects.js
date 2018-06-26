@@ -1,29 +1,30 @@
-
-function getProjects(){
-    // Send the PUT request.
-    $.ajax("/api", {
-      type: "GET"
-    }).then(
-      function(data) {
-        allProjects= data;
-        console.log(allProjects);
-      }
-    );
-  };
+var express = require('express');
+var router = express.Router();
+var path = require('path');
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
+var fs = require('fs');
+var request = require('request');
+var fetch = require('node-fetch');
+var allProjects = [{title: 'nope', desc: 'nope'}];
 
 function data(){
-  // getProjects();
-  allProjects=[
-    {title:'Portfolio',
-     desc: 'Project 1 info here..'
-    },
-    {title:'CompAct',
-     desc: 'Project 2 info here..'
-    },
-    {title:'CompAct',
-     desc: 'Project 2 info here..'
-    }];
-  return allProjects
+
+  fetch('http://localhost:3000/api')
+    .then(
+      function(response){
+        return response.json();
+      }
+    )
+    .then(
+      function(myJson){
+        // console.log('then: '+JSON.stringify(myJson));
+        allProjects=myJson;
+        // console.log("set variable: "+allProjects)
+        return allProjects
+      }
+    )
+    return allProjects
 }
 
 module.exports = {data}
