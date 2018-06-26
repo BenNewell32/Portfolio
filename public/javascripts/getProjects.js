@@ -12,6 +12,7 @@ function getProjects(){
   };
 
 function data(){
+  // getProjects();
   allProjects=[
     {title:'Portfolio',
      desc: 'Project 1 info here..'
