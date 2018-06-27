@@ -58,20 +58,21 @@
       <section class="cta" id={{title}}>
         <div class="cta-content">
           <div class="container">
-            <h2>{{title}}</h2>
-            <h3 style='color: rgba(255, 255, 255, 0.671)'>{{desc}}<br></h3>
-            <a class="btn btn-info btn-xl js-scroll-trigger">
+            <h1 style='color: rgba(255, 255, 255, 0.671)'>{{title}}</h1>
+            <h4 style='color: rgba(255, 255, 255, 0.671)'>{{desc}}<br></h4>
+            <a href={{url}} class="btn btn-info btn-xl js-scroll-trigger">
               <i style="font-size:20px" class="fa fa-desktop"></i>
               TAKE A LOOK!
               </a>
-            <a class="btn btn-info btn-xl js-scroll-trigger">
+            <a href={{gitUrl}} class="btn btn-info btn-xl js-scroll-trigger">
               <i style="font-size:20px" class="fa fa-github"></i>
               VIEW GITHUB
             </a>
           </div>
         </div>
         <div class="overlay"></div>
-      </section>      
+      </section>   
+      <br>
     {{/each}}
 
     <footer>
