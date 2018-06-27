@@ -22,3 +22,6 @@ https://cheerio.js.org/
 ##Notes
 module.exports example
 https://www.youtube.com/watch?v=P51O_PT7NUg
+
+##Website as an Image
+https://www.npmjs.com/package/screenshot-stream

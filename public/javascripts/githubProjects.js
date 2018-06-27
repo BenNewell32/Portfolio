@@ -1,6 +1,8 @@
 var request = require('request');
 var cheerio = require('cheerio');
 var projects=[]
+var getImages = require('../javascripts/getImages.js')
+
 
 request('https://github.com/BenNewell32?tab=repositories', function(err, resp, html) {
         if (!err){
@@ -16,7 +18,7 @@ request('https://github.com/BenNewell32?tab=repositories', function(err, resp, h
                 title: title,
                 desc: desc,
                url:'http://'+url,
-               gitUrl: 'https://github.com/BenNewell32/'+title
+               gitUrl: 'https://github.com/BenNewell32/'+title      
             });
           });
       }

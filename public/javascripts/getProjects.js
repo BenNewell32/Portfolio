@@ -6,7 +6,7 @@ var logger = require('morgan');
 var fs = require('fs');
 var request = require('request');
 var fetch = require('node-fetch');
-var allProjects = [{title: 'nope', desc: 'nope'}];
+var allProjects = [{title: 'Refresh the page!', desc: 'Please :)'}];
 
 function data(){
 
