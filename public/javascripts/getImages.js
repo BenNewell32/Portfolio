@@ -1,6 +1,6 @@
+var fetch = require('node-fetch');
 const fs = require('fs');
 const screenshot = require('screenshot-stream');
- 
 
 function checkImage(url){
     fs.exists(url+'-1024x768.png', (exists) => {
@@ -22,5 +22,7 @@ function buildImg(url){
     stream.pipe(fs.createWriteStream(url+'-1024x768.png'));
     return url+'-1024x768.png';
 }
+
+checkImage('bens.work');
 
 module.exports = {checkImage}
