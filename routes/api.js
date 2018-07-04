@@ -4,19 +4,38 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var fs = require('fs');
-var request = require('request');
 var fetch = require('node-fetch');
+var request = require('request');
+var cheerio = require('cheerio');
+var projects = [];
 
-var githubProjects = require('../public/javascripts/githubProjects.js')
+function beginScrape(){
+    request('https://github.com/BenNewell32?tab=repositories', function(err, resp, html) {
+        if (!err){
+            const $ = cheerio.load(html);
+            console.log('Clearing projects array. -api.js');
+            projects=[];
+            $('li','#user-repositories-list').each(function(i, element) {
+                var title = $(element).children().first().text().replace('\n      ','').replace('\n      ','').replace('\n      ','').replace('    ','').replace('  ','').replace('\n    \n\n\n    ','').replace('\n\n    \n    ','').replace('\n','').replace('    \n\n        \n          ','').replace('\n        \n\n    ','');
+                var fulldesc = $(element).children().eq(1).text().replace('\n      ','').replace('\n      ','').replace('\n      ','').replace('    ','').replace('  ','').replace('\n    \n\n\n    ','').replace('  \n\n      \n        \n        \n      \n    ','').replace('\n\n    \n    ','').replace('\n','');
+                var desc = fulldesc.split(" URL - ")[0];
+                var url = fulldesc.split(" URL - ")[1];
+                projects.push({
+                    title: title,
+                    desc: desc,
+                    url:'http://'+url,
+                    gitUrl: 'https://github.com/BenNewell32/'+title      
+                });
+            });
+            console.log('Array has been built. -api.js');
+            return projects;
+        }
+    })
+}
 
-// Homepage for the route "/api"
   router.get('/', function(req, res, next) {
-    res.send(githubProjects.data());
-    });
-
-// Ben - simply add another route "/api/user"
-  // router.get('/user', function(req, res, next) {
-  //   res.send(githubProjects.data());
-  // });
+    beginScrape();
+    setTimeout(()=>{res.send(projects)},3000);
+  })
 
 module.exports = router;

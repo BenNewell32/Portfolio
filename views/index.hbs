@@ -20,14 +20,10 @@
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
-
     <!-- Custom styles for this template -->
     <link href="stylesheets/new-age.min.css" rel="stylesheet">
   </head>
-
-  <body id="page-top">
+  <body>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -46,44 +42,17 @@
               <a class="nav-link js-scroll-trigger" href="/projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="/api">View API</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
-    <header class="masthead">
-      <div class="container h-100">
-        <div class="row h-100">
-          <div class="col-lg-7 my-auto">
-            <div class="header-content mx-auto">
-              <h1 class="mb-5">I may be the best webdev everrrrr</h1>
-              <h1>
-                -Ben Newell
-              </h1>
-              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
-            </div>
-          </div>
-          <div class="col-lg-5 my-auto">
-            <div class="device-container">
-              <div class="device-mockup iphone6_plus portrait white">
-                <div class="device">
-                  <div class="screen">
-                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                    <img src="images/demo-screen-1.jpg" class="img-fluid" alt="">
-                  </div>
-                  <div class="button">
-                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
     <footer>
+      <canvas id='homeCanvas' style='height: 100%; width: 100%; border: 1px solid black'>
+
+      </canvas>
+      
       <div class="container">
         <p>&copy; Created by Ben Newell. All Rights Reserved.</p>
         <ul class="list-inline list-social">
@@ -106,6 +75,7 @@
       </div>
     </footer>
 
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -115,9 +85,31 @@
 
     <!-- Custom scripts for this template -->
     <script src="javascripts/new-age.min.js"></script>
+    <script src="javascripts/canvas.js"></script>
 
     <!-- Check images before project page gets rendered! -->
 
   </body>
 
 </html>
+
+{{!-- Save for refrence --}}
+
+    {{!-- <header class="masthead">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-lg-7 my-auto">
+            <div class="header-content mx-auto"> --}}
+              {{!-- <img class="img-circle" src="https://media.licdn.com/dms/image/C5603AQH3bf6tVzfzDA/profile-displayphoto-shrink_200_200/0?e=1535587200&v=beta&t=Uu8k1tREG6TC4vTSwdXqjckCXa0Jp49KqSpe00IFujU" alt=""></img>
+              <div class="social">
+                <br>
+                <a style='color: rgba(246, 248, 250, 0.644)' href="https://www.linkedin.com/in/ben-newell-mba/"><i id="linkedin" class="fa fa-3x fa-linkedin"></i></a>
+                <a style='color: rgba(246, 248, 250, 0.644)' href="https://github.com/BenNewell32"><i id="github" class="fa fa-3x fa-github"></i></a>
+                <a style='color: rgba(246, 248, 250, 0.644)' href=""><i id="twitter" class="fa fa-3x fa-twitch"></i></a>
+                <a style='color: rgba(246, 248, 250, 0.644)' href="mailto:ben.m.newell@gmail.com"><i id="mail" class="fa fa-3x fa-envelope "></i></a>
+              </div> --}}
+            {{!-- </div>
+          </div>
+        </div>
+      </div> --}}
+    {{!-- </header> --}}
