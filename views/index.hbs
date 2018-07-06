@@ -46,15 +46,20 @@
         </div>
       </div>
     </nav>
-    <section id='intro'>
-      <div  style='justify-content: center' class="container">
+    <canvas  id='introCanvas' style=''>
+    </canvas>
+    <section class='fade-scroll' display='block' id='intro'>
+      <div style='justify-content: center' class="container">
         <div style='justify-content: center;' class="row">
-          <div >
+          <div style='justify-content: center; content-align: center'>
             <br>
             <br>
-            <img src="../images/BenStatue.png" style='background: rgba(255, 255, 255, 0.342); border: 1px solid rgba(255, 255, 255, 0.342); border-radius: 50%' width='300' height='300vh'> 
+            <img id='face' src="../images/BenStatue.png" style='background: rgba(255, 255, 255, 0.342); border: 1px solid rgba(255, 255, 255, 0.342); border-radius: 50%' width='300' height='300vh'> 
+            <br>
+            <img id='faceBackground' src="" style='justify-content:center;border-radius: 50%' width='300' height='300vh'> 
           </div>
         </div>
+        <br>
         <div>
           <h1 id='title'>
             Ben M. Newell
@@ -77,7 +82,7 @@
       </div>
     </section>
 
-    <section name='webdev' id='webdev'>
+    <section class='fade-scroll' display='block' name='webdev' id='webdev'>
       <div  style='justify-content: center' class="container">
         <div style='justify-content: center;' class="row">
           <div >
@@ -126,7 +131,7 @@
         </div>
       </div>
     </section>
-    <section id='bi'>
+    <section class='fade-scroll' id='bi'>
       <div  style='justify-content: center' class="container">
         <div style='justify-content: center;' class="row">
           <div >
@@ -175,44 +180,44 @@
         </div>
       </div>
     </section>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div id='personal' class="col-4">
-            <img src="../images/pickleball.jpg" style='border-radius: 50%' width='300vh' height='300vh'> 
+    <section class='fade-scroll' id='personal'>
+      <div  style='justify-content: center' class="container">
+        <div style='justify-content: center;' class="row">
+          <div >
+            <br>
+            <br>
           </div>
-          <div class="col-1">
-          </div>
-          <div class="col-7">
-            <div class="row">
-              <h1>
-                Personal Life
-              </h1>
-              <h3>
-                Pickleball any day of the week. My other hobbies include:
-              </h3>
-            </div>
+        </div>
+        <div>
+          <h1 id='title'>
+            Personal Life
+          </h1>
+          <h3 id='titleSub'>
+                Pickleball any day of the week. 
+                <br>My other hobbies include:
+            <br>
+            <br>
+          </h3>
             <div class="row">
               <div class ='col'>
-                <ul>
-                  <i data-feather="speaker"></i> Guitar <br>
+                <ul style='text-align: center;'>
+                  <i data-feather="moon"></i> <br>Space <br>
                   <br>
-                  <i class="fa fa-gamepad fa-lg"></i> Video Games <br>
+                  <i class="fa fa-trophy fa-lg"></i> <br>Sports <br>
                   <br>
-                  <i class="fa fa-home fa-lg"></i> Family Time <br>
+                  <i data-feather="activity"></i> <br>Lifting <br>
                 </ul>
               </div>
               <div class ='col'>
-                <ul>
-                  <i data-feather="moon"></i> Space <br>
+                <ul style='text-align: center;'>
+                  <i data-feather="speaker"></i> <br>Guitar <br>
                   <br>
-                  <i class="fa fa-trophy fa-lg"></i> Sports <br>
+                  <i class="fa fa-gamepad fa-lg"></i> <br>Video Games <br>
                   <br>
-                  <i data-feather="activity"></i> Lifting <br>
+                  <i class="fa fa-home fa-lg"></i> <br>Family Time <br>
                 </ul>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </section>
@@ -250,11 +255,36 @@
     <!-- Custom scripts for this template -->
     <script src="javascripts/new-age.min.js"></script>
     <script src="javascripts/canvas.js"></script>
+    <script src="javascripts/webdevCanvas.js"></script>
 
     <!-- Check images before project page gets rendered! -->
     <script>
       feather.replace()
     </script>
+    <script class="js">
+      function hide(){
+        document.getElementById("intro").setAttribute("display", "none");
+      }
+    </script>
+    <script class="js">
+      function fade(){
+        var documentv = $(document),
+            fadeElement = $('.fade-scroll');
+                document.on('scroll', function (){
+          var currentScrollPosition = documentv.scrollTop();
+          fadeElement.each(function(){
+            var $this = $(this),
+                elementOffsetTop = $this.offset().top;
+            if (currentScrollPosition > elementOffsetTop){
+            $this.css('opacity', 1-(currentScrollPosition-elementOffsetTop)/400)
+            }
+          })
+        })
+
+      }
+    </script>
+
+    
   </body>
 
 </html>
