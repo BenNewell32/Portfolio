@@ -25,3 +25,14 @@ https://www.youtube.com/watch?v=P51O_PT7NUg
 
 ##Website as an Image
 https://www.npmjs.com/package/screenshot-stream
+
+##Canvas
+https://www.youtube.com/watch?v=yq2au9EfeRQ
+
+
+##To Dos
+    Scrape images from prod sites.
+    Add more to Home page.
+    Check browser compatibility.
+    Check mobile.
+    Download all supporting libraries to insure longevity. 
