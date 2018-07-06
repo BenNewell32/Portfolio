@@ -11,7 +11,7 @@ var allProjects=[];
 
 function fetchProjects(){
   allProjects=[];
-  fetch('http://localhost:3000/api')
+  fetch('http://www.bens.work/api')
       .then(
           function(response){
               return response.json();
