@@ -43,3 +43,9 @@ https://www.youtube.com/watch?v=yFd-YhG6N2g
     Check browser compatibility.
     Check mobile.
     Download all supporting libraries to insure longevity. 
+
+
+##Bugs
+    The Fetch method only takes qualified urls. ex: https:/localhost:300/api instead of /api.
+
+    Portfolio page still not updating from api.
