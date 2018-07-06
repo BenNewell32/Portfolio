@@ -14,6 +14,7 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
+  <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -23,21 +24,18 @@
     <!-- Custom styles for this template -->
     <link href="stylesheets/new-age.min.css" rel="stylesheet">
   </head>
-  <body>
+  <body id='home'>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Welcome</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/">Welcome</a>
-            </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="/projects">Projects</a>
             </li>
@@ -48,11 +46,177 @@
         </div>
       </div>
     </nav>
-    <footer>
-      <canvas id='homeCanvas' style='height: 100%; width: 100%; border: 1px solid black'>
+    <section id='intro'>
+      <div  style='justify-content: center' class="container">
+        <div style='justify-content: center;' class="row">
+          <div >
+            <br>
+            <br>
+            <img src="../images/BenStatue.png" style='background: rgba(255, 255, 255, 0.342); border: 1px solid rgba(255, 255, 255, 0.342); border-radius: 50%' width='300' height='300vh'> 
+          </div>
+        </div>
+        <div>
+          <h1 id='title'>
+            Ben M. Newell
+          </h1>
+          <h3 id='titleSub'>
+            Benevolence • Analytics • Automation<br>
+            <br>
+          </h3>
+          <div href='#webdev' style='justify-content: center;' class='row'>
+              <span class="fa-stack fa-3x">
+                <i  class="fa fa-chevron-down fa-stack-1x"></i>
+              </span>
+          </div>
+        </div>
+        <br>
+        <div style='justify-content: center' class="row">
+          <div class="col-4">
+          </div>
+        </div>
+      </div>
+    </section>
 
-      </canvas>
-      
+    <section name='webdev' id='webdev'>
+      <div  style='justify-content: center' class="container">
+        <div style='justify-content: center;' class="row">
+          <div >
+            <br>
+            <br>
+          </div>
+        </div>
+        <div>
+          <h1 id='title'>
+            Full Stack Web Development
+          </h1>
+          <h3 id='titleSub'>
+            Passion for automation and backend logic.
+            <br>
+          </h3>
+                      <div class="row">
+              <div class ='col'>
+                <ul style='text-align: center;' >
+                    <i data-feather="code"></i> <h5>JavaScript</h5> <br>
+                    <br>
+                    <i data-feather="codepen"></i> <h5>HTML</h5> <br>
+                    <br>
+                    <i data-feather="edit-2"></i> <h5>CSS</h5> <br>
+                </ul>
+              </div>
+              <div class ='col'>
+                <ul style='text-align: center;' >
+                    <i data-feather="terminal"></i> <h5>PowerShell</h5> <br>
+                    <br>
+                    <i class = 'fa fa-code fa-lg'></i> <h5>Python</h5> <br>
+                    <br>
+                    <i data-feather="git-merge"></i> <h5>GitHub</h5> <br>
+                </ul>
+              </div>
+            </div>
+          <div style='justify-content: center;' class='row'>
+              <span class="fa-stack fa-3x">
+                <i  class="fa fa-chevron-down fa-stack-1x"></i>
+              </span>
+          </div>
+        </div>
+        <br>
+        <div style='justify-content: center' class="row">
+          <div class="col-4">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id='bi'>
+      <div  style='justify-content: center' class="container">
+        <div style='justify-content: center;' class="row">
+          <div >
+            <br>
+            <br>
+          </div>
+        </div>
+        <div>
+          <h1 id='title'>
+            Business Intelligence
+          </h1>
+          <h3 id='titleSub'>
+                Data visualization is here. Strong focus on realtime analytics using today's popular tools. 
+            <br>
+          </h3>
+            <div class="row">
+              <div class ='col'>
+                <ul style='text-align: center;' >
+                    <i data-feather="bar-chart"></i> 
+                    <br>Tableau <br>
+                    (Desktop Qualified Associate) <br>
+                    <br>
+                    <i data-feather="pie-chart"></i> 
+                    <br>GoogleCharts <br>
+                </ul>
+              </div>
+              <div class ='col'>
+                <ul style='text-align: center;' >
+                    <i data-feather="database"></i> 
+                    <br>Microsoft SQL Server, <br> 
+                    PostgreSQL, <br> 
+                    Oracle, Teradata, more! <br>
+                </ul>
+              </div>
+            </div>
+          <div style='justify-content: center;' class='row'>
+              <span class="fa-stack fa-3x">
+                <i  class="fa fa-chevron-down fa-stack-1x"></i>
+              </span>
+          </div>
+        </div>
+        <br>
+        <div style='justify-content: center' class="row">
+          <div class="col-4">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div id='personal' class="col-4">
+            <img src="../images/pickleball.jpg" style='border-radius: 50%' width='300vh' height='300vh'> 
+          </div>
+          <div class="col-1">
+          </div>
+          <div class="col-7">
+            <div class="row">
+              <h1>
+                Personal Life
+              </h1>
+              <h3>
+                Pickleball any day of the week. My other hobbies include:
+              </h3>
+            </div>
+            <div class="row">
+              <div class ='col'>
+                <ul>
+                  <i data-feather="speaker"></i> Guitar <br>
+                  <br>
+                  <i class="fa fa-gamepad fa-lg"></i> Video Games <br>
+                  <br>
+                  <i class="fa fa-home fa-lg"></i> Family Time <br>
+                </ul>
+              </div>
+              <div class ='col'>
+                <ul>
+                  <i data-feather="moon"></i> Space <br>
+                  <br>
+                  <i class="fa fa-trophy fa-lg"></i> Sports <br>
+                  <br>
+                  <i data-feather="activity"></i> Lifting <br>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>     
       <div class="container">
         <p>&copy; Created by Ben Newell. All Rights Reserved.</p>
         <ul class="list-inline list-social">
@@ -88,7 +252,9 @@
     <script src="javascripts/canvas.js"></script>
 
     <!-- Check images before project page gets rendered! -->
-
+    <script>
+      feather.replace()
+    </script>
   </body>
 
 </html>
