@@ -44,7 +44,7 @@ function urlExists(url){
     } else {
         console.log('Exists');
         console.log(url);
-        img= 'background-size: cover; background-image: url(../images/'+url+'.png)'
+        img= 'background-repeat: no-repeat; background-size: 50%; background-image: url(../images/'+url+'.png)'
         return img;
     }
 }
