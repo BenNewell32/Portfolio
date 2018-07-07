@@ -132,8 +132,16 @@ header.masthead{position:relative;width:100%;padding-top:150px;
     align-content: center;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    color:rgba(255, 255, 255, 0.397);
+    color:rgba(255, 255, 255, 0.603);
 }
+
+#titleSubTop{
+    align-content: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color:rgba(0, 0, 0, 0.514);
+}
+
 #intro{
     height: 100vh;
     background-size: cover;
@@ -201,7 +209,7 @@ header.masthead{position:relative;width:100%;padding-top:150px;
 }
 
 .jumbotron{
-    color:#1595AA;
+    color:rgba(0, 0, 0, 0.733);
     background-color:white;
     opacity: .75;
 }
