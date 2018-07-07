@@ -1,28 +1,28 @@
-// var fetch = require('node-fetch');
-// const fs = require('fs');
-// const screenshot = require('screenshot-stream');
+var fetch = require('node-fetch');
+const fs = require('fs');
+const screenshot = require('screenshot-stream');
 
-// function checkImage(url){
-//     fs.exists(url+'-1024x768.png', (exists) => {
-//         console.log(exists ? removeImage(url) : buildImg(url));
-//       });
-// }
+function checkImage(url,title){
+    fs.exists(title+'.png', (exists) => {
+        console.log(exists ? removeImage(title) : buildImg(title,url));
+      });
+}
 
-// function removeImage(url){
-//     var file=(url+'-1024x768.png').toString();
-//     fs.unlink(file, (err) => {
-//         if (err) throw err;
-//         console.log(url+'-1024x768.png'+' was deleted');
-//         buildImg(url);
-//     });
-// }
+function removeImage(title){
+    var file=(title+'.png').toString();
+    fs.unlink(file, (err) => {
+        if (err) throw err;
+        console.log(title+'.png'+' was deleted');
+        buildImg(title);
+    });
+}
 
-// function buildImg(url){
-//     const stream = screenshot('http://'+url, '1024x768', {crop: true, delay:10}); 
-//     stream.pipe(fs.createWriteStream(url+'-1024x768.png'));
-//     return url+'-1024x768.png';
-// }
+function buildImg(title,url){
+    const stream = screenshot('http://'+url, '1024x768', {crop: true, delay:10}); 
+    stream.pipe(fs.createWriteStream(title+'.png'));
+    return title+'.png';
+}
 
-// checkImage('bens.work');
+checkImage('www.bens.work','Portfolio');
 
-// module.exports = {checkImage}
+module.exports = {checkImage}

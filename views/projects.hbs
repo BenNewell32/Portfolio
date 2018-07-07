@@ -58,11 +58,12 @@
     </nav>
 
     {{#each projects}}
-      <section class="cta" id={{title}}>
-        <div class="cta-content">
+      <section>
+        <div id={{img}} class='backgroundJumbo' style={{img}}>
+        <div class="jumbotron jumbotron-fluid">
           <div class="container">
-            <h1 style='color: rgba(255, 255, 255, 0.671)'>{{title}}</h1>
-            <h4 style='color: rgba(255, 255, 255, 0.671)'>{{desc}}<br></h4>
+            <h1 class="display-4">{{title}}</h1>
+            <p class="lead">{{desc}}</p>
             <a href={{url}} class="btn btn-info btn-xl js-scroll-trigger">
               <i style="font-size:20px" class="fa fa-desktop"></i>
               TAKE A LOOK!
@@ -71,12 +72,10 @@
               <i style="font-size:20px" class="fa fa-github"></i>
               VIEW GITHUB
             </a>
-            <img src={{img}}>
           </div>
         </div>
-        <div class="overlay"></div>
-      </section>   
-      <br>
+        </div>
+      </section>
     {{/each}}
 
     <footer>

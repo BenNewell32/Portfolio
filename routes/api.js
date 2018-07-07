@@ -20,17 +20,33 @@ function beginScrape(){
                 var fulldesc = $(element).children().eq(1).text().replace('\n      ','').replace('\n      ','').replace('\n      ','').replace('    ','').replace('  ','').replace('\n    \n\n\n    ','').replace('  \n\n      \n        \n        \n      \n    ','').replace('\n\n    \n    ','').replace('\n','');
                 var desc = fulldesc.split(" URL - ")[0];
                 var url = fulldesc.split(" URL - ")[1];
+                var img = urlExists(url);
                 projects.push({
                     title: title,
                     desc: desc,
                     url:'http://'+url,
-                    gitUrl: 'https://github.com/BenNewell32/'+title      
+                    gitUrl: 'https://github.com/BenNewell32/'+title,
+                    img: img 
                 });
             });
             console.log('Array has been built. -api.js');
             return projects;
         }
     })
+}
+
+function urlExists(url){
+    if (url == null){
+        console.log('Null');
+        console.log(url);
+        img=''
+        return img;
+    } else {
+        console.log('Exists');
+        console.log(url);
+        img= 'background-image: url(../images/'+url+'.png)'
+        return img;
+    }
 }
 
   router.get('/', function(req, res, next) {

@@ -197,5 +197,15 @@ header.masthead{position:relative;width:100%;padding-top:150px;
     align-content: center;
     justify-content: center;
     text-align: center;
-    color:#00CED1;
+    color:#1595AA;
 }
+
+.jumbotron{
+    color:#1595AA;
+    background-color:white;
+    opacity: .75;
+}
+
+/* .backgroundJumbo{
+
+} */
