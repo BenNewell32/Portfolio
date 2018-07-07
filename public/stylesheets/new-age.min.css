@@ -143,24 +143,24 @@ header.masthead{position:relative;width:100%;padding-top:150px;
 }
 
 #intro{
-    height: 100vh;
+    /* height: 100vh; */
     background-size: cover;
     align-content: center;
     justify-content: center;
 }
 #webdev{
-    height: 100vh;
+    /* height: 100vh; */
     background-size: cover;
     align-content: center;
     justify-content: center;
     vertical-align: center;
 }
 #bi{
-    height: 100vh;
+    /* height: 100vh; */
     background-size: cover;
 }
 #personal{
-    height: 100vh;
+    /* height: 100vh; */
     background-size: cover;
 }
 @keyframes bounce {
