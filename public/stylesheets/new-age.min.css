@@ -191,3 +191,11 @@ header.masthead{position:relative;width:100%;padding-top:150px;
     background:rgba(252, 250, 250, 0.144);   
     margin-left: -10vh;    
 }
+
+.card{
+    margin: 3px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    color:#00CED1;
+}
