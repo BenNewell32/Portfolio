@@ -200,12 +200,22 @@ header.masthead{position:relative;width:100%;padding-top:150px;
     margin-left: -10vh;    
 }
 
-.card{
+.cardList{
     margin: 3px;
     align-content: center;
     justify-content: center;
     text-align: center;
     color:#1595AA;
+}
+
+.iconHeader{
+    margin: 3px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    color:white;
+    background: transparent;
+    border: none;
 }
 
 .jumbotron{
@@ -214,6 +224,17 @@ header.masthead{position:relative;width:100%;padding-top:150px;
     opacity: .75;
 }
 
-/* .backgroundJumbo{
+.webDevArt{
+    /* background-color: rgba(0, 0, 0, 0.363); */
+    margin-left:5px;
+    position: relative;
+    width: 100%;
+    height: 30vh;
 
-} */
+}
+
+.iconRow{
+    justify-content: center;
+    vertical-align: center;
+    color:rgba(0, 0, 0, 0.514)
+}
