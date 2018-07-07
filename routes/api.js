@@ -44,7 +44,7 @@ function urlExists(url){
     } else {
         console.log('Exists');
         console.log(url);
-        img= 'background-image: url(../images/'+url+'.png)'
+        img= 'url(../images/'+url+'.png)'
         return img;
     }
 }
