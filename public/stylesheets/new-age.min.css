@@ -235,24 +235,3 @@ header.masthead{position:relative;width:100%;padding-top:150px;
     vertical-align: center;
     color:rgba(0, 0, 0, 0.514)
 }
-
-#landscape { display:block; }
-@media only screen and (orientation:portrait){
-  #landscape {  
-    height: 100vw;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-  }
-}
-@media only screen and (orientation:landscape){
-  #landscape {  
-     -webkit-transform: rotate(0deg);
-     -moz-transform: rotate(0deg);
-     -o-transform: rotate(0deg);
-     -ms-transform: rotate(0deg);
-     transform: rotate(0deg);
-  }
-}
