@@ -67,7 +67,7 @@ function animate(){
     setTimeout(() => {
     requestAnimationFrame(animate);
           
-}, 500);
+}, 50);
     // console.log('Create Circle')
     addCircles();
     circle.update();
