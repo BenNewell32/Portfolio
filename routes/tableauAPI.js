@@ -8,10 +8,8 @@ var request = require('request');
 var fetch = require('node-fetch');
 
 router.get('/', function(req, res, next) {
-    setTimeout(()=>{
-        res.render('tableauAPI', { 
-            title: 'tableauAPI', 
-        })
-    },3000)
+    res.render('tableauAPI', { 
+        title: 'tableauAPI', 
+    })
 })
 module.exports = router;
