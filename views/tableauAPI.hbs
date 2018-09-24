@@ -142,8 +142,9 @@
             A Custom Tableau Portal
           </h1>
           <br>
-          <div class='row' style="background-color: black; height: 100px">
-
+          <div onload="initViz();" class='row' style="background-color: black">
+            <div id="vizContainer" style="width:800px; height:700px;">
+            </div> 
           </div>
           <div style='justify-content: center;' class='row '>
               <span class="fa-stack fa-3x js-scroll-trigger" href="/#bi">
@@ -198,5 +199,9 @@
 
     <!-- Custom scripts for this template -->
     <script src="javascripts/new-age.min.js"></script>
+
+    <!-- Tableau JavaScript API Scripts -->
+    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script type="text/javascript" src="javascripts/embed.js"></script>></script>
   </body>
 </html>
