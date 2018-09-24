@@ -8,7 +8,7 @@ var request = require('request');
 var fetch = require('node-fetch');
 
 router.get('/', function(req, res, next) {
-    res.render('projects1', { 
+    res.render('tableauAPI', { 
         title: 'TableauAPI', 
         projects: allProjects 
     })
