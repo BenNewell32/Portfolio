@@ -45,6 +45,103 @@
 </head>
 
 <body onload="initViz();">
+  <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Tableau JavaScript API</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/api">View API</a>
+            </li>
+            {{!-- <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/contact">Contact</a>
+            </li> --}}
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class='fade-scroll' display='block' name='webdev' id='webdev'>
+      <div  style='justify-content: center' class="container">
+        <div style='justify-content: center;' class="row">
+          <div >
+            <br>
+            <br>
+          </div>
+        </div>
+        <div >
+          <h1 style='color:rgba(0, 0, 0, 0.514)' id='title'>
+            Embedded Analytics
+          </h1>
+          <h3 id='titleSub'>
+            Utilizing Tableau's suite of tools we are able to connect to data, build real-time analytics, and embed these visualizations into custom portals. 
+            <br>
+            <br>
+            This example showcases the following products:
+            <br>
+          </h3>
+            <div style='content-align: center; justify-content: center' class="row">
+              <div class="card cardList" style="width: 18rem;">
+                {{!-- <img class="card-img-top" src="..." alt="Card image cap"> --}}
+                <div class="card-body">
+                  <p class="card-text">
+                    <a href="https://www.tableau.com/products/desktop">
+                      Tableau Desktop
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="card cardList" style="width: 18rem;">
+                {{!-- <img class="card-img-top" src="..." alt="Card image cap"> --}}
+                <div class="card-body">
+                  <p class="card-text">
+                    <a href="https://www.tableau.com/products/server">
+                      Tableau Server
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="card cardList" style="width: 18rem;">
+                {{!-- <img class="card-img-top" src="..." alt="Card image cap"> --}}
+                <div class="card-body">
+                  <p class="card-text">
+                    <a href="https://onlinehelp.tableau.com/current/api/js_api/en-us/JavaScriptAPI/js_api.htm">
+                      Tableau Javascript API
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          <br>
+          <div style='justify-content: center;' class='row '>
+              <span class="fa-stack fa-3x js-scroll-trigger" href="/#portal">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#portal">
+                      <i style='color: white' class="fa fa-chevron-down fa-stack-1x"></i>
+                    </a>
+                  </li>
+                </ul>
+              </span>
+          </div>
+        </div>
+        <br>
+        <div style='justify-content: center' class="row">
+          <div class="col-4">
+          </div>
+        </div>
+      </div>
+    </section>
     <div id="vizContainer" style="width:800px; height:700px;"></div>    
 </body>
     <footer>
