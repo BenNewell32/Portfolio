@@ -10,7 +10,6 @@ var fetch = require('node-fetch');
 router.get('/', function(req, res, next) {
     res.render('tableauAPI', { 
         title: 'TableauAPI', 
-        projects: allProjects 
     })
 })
 module.exports = router;
