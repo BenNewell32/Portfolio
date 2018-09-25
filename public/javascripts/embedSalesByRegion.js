@@ -1,3 +1,4 @@
+var viz;
 function initViz() {
     var containerDiv = document.getElementById("vizContainer"),
         url = "https://public.tableau.com/views/SampleSalesbyRegion/Dashboard1?:embed=y&:display_count=yes&publish=yes",
@@ -9,7 +10,7 @@ function initViz() {
             }
         };
     
-    var viz = new tableau.Viz(containerDiv, url, options); 
+    viz = new tableau.Viz(containerDiv, url, options); 
     // Create a viz object and embed it in the container div.
 }
 
