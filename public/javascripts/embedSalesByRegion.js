@@ -16,14 +16,14 @@ function initViz() {
     // Create a viz object and embed it in the container div.
 }
 
-function hideViz() {
-    setTimeout(
-        function(){ 
-            viz.hide();
-        }, 3000
-    );
-}
+// function hideViz() {
+//     setTimeout(
+//         function(){ 
+//             viz.hide();
+//         }, 3000
+//     );
+// }
 
-function showViz() {
-    viz.show()
-}
+// function showViz() {
+//     viz.show()
+// }
