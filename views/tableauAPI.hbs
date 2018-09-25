@@ -11,6 +11,7 @@
                 url = "https://public.tableau.com/views/SampleSalesbyRegion/Dashboard1?:embed=y&:display_count=yes&publish=yes",
                 options = {
                     hideTabs: true,
+                    hideToolbar: true,
                     onFirstInteractive: function () {
                         console.log("Run this code when the viz has finished loading.");
                     }
@@ -157,7 +158,7 @@
             Portal Example
           </h1>
             <div style='content-align: center; justify-content: center' class="row">
-              <div id="vizContainer" ></div>
+              <div id="vizContainer" style='height:80%; width: 80%' ></div>
             </div>
         </div>
         <br>
