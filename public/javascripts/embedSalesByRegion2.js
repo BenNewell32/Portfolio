@@ -1,5 +1,7 @@
 var viz2;
+var counter2=0;
 function initViz2() {
+    counter2=1;
     var containerDiv = document.getElementById("vizContainer2"),
         url = "https://public.tableau.com/views/SampleSalesbyRegion/Dashboard1?:embed=y&:display_count=yes&publish=yes",
         options = {
@@ -24,7 +26,12 @@ function hideViz2() {
 }
 
 function showViz2() {
-    viz2.show()
+    if (counter2===0){
+        initViz2();
+    }
+    else{
+        viz2.show();
+    }
 }
 
 function hideVizQuick2() {
