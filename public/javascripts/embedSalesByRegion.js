@@ -1,3 +1,4 @@
+
 var viz;
 function initViz() {
     var containerDiv = document.getElementById("vizContainer"),
@@ -10,10 +11,11 @@ function initViz() {
             }
         };
     
-    viz = new tableau.Viz(containerDiv, url, options); 
+    viz = new tableau.Viz(containerDiv, url, options);
+    viz.hide(); 
     // Create a viz object and embed it in the container div.
 }
 
 function hideViz() {
-    viz.hide();
+    viz.show();
 }
