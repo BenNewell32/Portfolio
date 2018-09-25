@@ -1,9 +1,9 @@
-function initViz() {
-    var containerDiv = document.getElementById("vizContainer"),
+function hideViz() {
+    var containerDiv = document.getElementById("vizContainer2"),
         url = "https://public.tableau.com/views/SampleSalesbyRegion/Dashboard1?:embed=y&:display_count=yes&publish=yes",
         options = {
             hideTabs: true,
-            hideToolbar: false,
+            hideToolbar: true,
             onFirstInteractive: function () {
                 console.log("Run this code when the viz has finished loading.");
             }
@@ -11,8 +11,4 @@ function initViz() {
     
     var viz = new tableau.Viz(containerDiv, url, options); 
     // Create a viz object and embed it in the container div.
-}
-
-function hideViz() {
-    viz.hide();
 }
