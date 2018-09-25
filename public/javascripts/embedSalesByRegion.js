@@ -16,10 +16,10 @@ function initViz() {
     // Create a viz object and embed it in the container div.
 }
 
-// function hideViz() {
-//     viz.hide();
-// }
+function hideViz() {
+    viz.hide();
+}
 
 function showViz() {
-    viz.hide();
+    viz.show();
 }
