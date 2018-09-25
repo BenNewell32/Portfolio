@@ -23,5 +23,5 @@ function hideViz2() {
 }
 
 function showViz2() {
-    viz.show(),3000
+    viz.show()
 }
