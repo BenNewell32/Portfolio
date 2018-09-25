@@ -21,8 +21,14 @@ https://cheerio.js.org/
 
 ##Notes
 module.exports example
-https://www.youtube.com/watch?v=P51O_PT7NUg
+    https://www.youtube.com/watch?v=P51O_PT7NUg
 
+tableau javascript links
+    https://onlinehelp.tableau.com/samples/en-us/js_api/tutorial.htm
+
+    https://onlinehelp.tableau.com/current/api/js_api/en-us/JavaScriptAPI/js_api_ref.htm
+    
+    https://community.tableau.com/docs/DOC-6448
 ##Website as an Image
 https://www.npmjs.com/package/screenshot-stream
 
