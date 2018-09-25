@@ -11,10 +11,14 @@ function initViz2() {
         };
     
     viz2 = new tableau.Viz(containerDiv, url, options); 
-    viz2.hide(); 
+     
     // Create a viz object and embed it in the container div.
 }
 
-function hideViz() {
+function hideViz2() {
+    viz2.hide();
+}
+
+function showViz2() {
     viz2.show();
 }
