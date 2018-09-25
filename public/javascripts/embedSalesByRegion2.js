@@ -19,8 +19,10 @@ function initViz2() {
 
 function hideViz2() {
     setTimeout(
-        viz2.hide(),3000
-    )
+        function(){ 
+            viz2.hide();
+        }, 3000
+    );
 }
 
 function showViz2() {
