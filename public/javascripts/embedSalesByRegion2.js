@@ -26,3 +26,7 @@ function hideViz2() {
 function showViz2() {
     viz2.show()
 }
+
+function hideVizQuick2() {
+    viz2.hide();
+}

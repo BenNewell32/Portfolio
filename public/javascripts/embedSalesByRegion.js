@@ -27,3 +27,8 @@ function hideViz() {
 function showViz() {
     viz.show()
 }
+
+
+function hideVizQuick() {
+    viz.hide();
+}
