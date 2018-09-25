@@ -3,7 +3,7 @@ var counter2=0;
 function initViz2() {
     counter2=1;
     var containerDiv = document.getElementById("vizContainer2"),
-        url = "https://public.tableau.com/views/Portal-SalesByRegionMap/Dashboard2?:embed=y&:display_count=yes&publish=yes",
+        url = "https://public.tableau.com/views/Portal-SalesByRegion/Sheet2?:embed=y&:display_count=yes&publish=yes",
         options = {
             hideTabs: true,
             hideToolbar: true,
