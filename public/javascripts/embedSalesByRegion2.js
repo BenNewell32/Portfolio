@@ -1,3 +1,5 @@
+import { setTimeout } from "timers";
+
 var viz2;
 function initViz2() {
     var containerDiv = document.getElementById("vizContainer2"),
@@ -16,9 +18,11 @@ function initViz2() {
 }
 
 function hideViz2() {
-    viz2.hide();
+    setTimeout(
+        viz2.hide(),3000
+    )
 }
 
 function showViz2() {
-    viz2.show();
+    viz2.show(),3000
 }
