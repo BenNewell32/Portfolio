@@ -1,8 +1,9 @@
 function initViz() {
     var containerDiv = document.getElementById("vizContainer"),
-        url = "http://public.tableau.com/views/RegionalSampleWorkbook/Storms",
+        url = "https://public.tableau.com/views/SampleSalesbyRegion/Dashboard1?:embed=y&:display_count=yes&publish=yes",
         options = {
             hideTabs: true,
+            hideToolbar: false,
             onFirstInteractive: function () {
                 console.log("Run this code when the viz has finished loading.");
             }
