@@ -40,7 +40,16 @@ function hideVizQuick() {
     viz.hide();
 }
 
-function hideNav(id){
-    var e = document.getElementById(id);
+function hideNav(){
+    var e = document.getElementById('logIn');
     e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+    var f = document.getElementById('logOut');
+    f.style.display = (f.style.display == 'block') ? 'block' : 'none';
+}
+
+function showNav(){
+    var e = document.getElementById('logIn');
+    e.style.display = (e.style.display == 'block') ? 'block' : 'none';
+    var f = document.getElementById('logOut');
+    f.style.display = (f.style.display == 'block') ? 'none' : 'block';
 }
