@@ -41,9 +41,9 @@ function hideVizQuick() {
 }
 
 function hideNav(){
-    var e = document.getElementById('logIn');
+    var e = document.getElementById('logOut');
     e.style.display = (e.style.display == 'block') ? 'none' : 'block';
-    var f = document.getElementById('logOut');
+    var f = document.getElementById('logIn');
     f.style.display = (f.style.display == 'block') ? 'block' : 'none';
 }
 
