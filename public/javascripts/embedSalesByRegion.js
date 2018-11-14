@@ -48,8 +48,8 @@ function hideNav(){
 }
 
 function showNav(){
-    var e = document.getElementById('logIn');
+    var e = document.getElementById('logOut');
     e.style.display = (e.style.display == 'block') ? 'block' : 'none';
-    var f = document.getElementById('logOut');
+    var f = document.getElementById('logIn');
     f.style.display = (f.style.display == 'block') ? 'none' : 'block';
 }
