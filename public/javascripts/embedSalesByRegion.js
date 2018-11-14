@@ -42,14 +42,14 @@ function hideVizQuick() {
 
 function hideNav(){
     var e = document.getElementById('logOut');
-    e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+    e.style.display = 'block';
     var f = document.getElementById('logIn');
-    f.style.display = (f.style.display == 'block') ? 'block' : 'none';
+    f.style.display = 'none';
 }
 
 function showNav(){
-    var e = document.getElementById('logOut');
-    e.style.display = (e.style.display == 'block') ? 'block' : 'none';
-    var f = document.getElementById('logIn');
-    f.style.display = (f.style.display == 'block') ? 'none' : 'block';
+    var e = document.getElementById('logIn');
+    e.style.display = 'block';
+    var f = document.getElementById('logOut');
+    f.style.display = 'none';
 }
