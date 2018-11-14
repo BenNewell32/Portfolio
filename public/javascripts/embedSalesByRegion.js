@@ -45,6 +45,10 @@ function hideNav(){
     e.style.display = 'block';
     var f = document.getElementById('logIn');
     f.style.display = 'none';
+    var g = document.getElementById('username');
+    g.style.display = 'none';
+    var h = document.getElementById('password');
+    h.style.display = 'none';
 }
 
 function showNav(){
@@ -52,4 +56,8 @@ function showNav(){
     e.style.display = 'block';
     var f = document.getElementById('logOut');
     f.style.display = 'none';
+    var g = document.getElementById('username');
+    g.style.display = 'block';
+    var h = document.getElementById('password');
+    h.style.display = 'block';
 }
