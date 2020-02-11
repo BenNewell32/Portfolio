@@ -38,7 +38,7 @@ https://www.youtube.com/watch?v=yq2au9EfeRQ
 ##Deploy Heroku
 https://devcenter.heroku.com/articles/git
 
-##Add Domain to Heroku
+##Add Domain to Heroku 
 https://devcenter.heroku.com/articles/custom-domains
 https://www.youtube.com/watch?v=yFd-YhG6N2g
 
